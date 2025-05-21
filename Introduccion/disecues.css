@@ -1,0 +1,51 @@
+
+#cuestionario {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+#cuestionario h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.formulario-tapir label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.formulario-tapir input[type="text"],
+.formulario-tapir input[type="number"],
+.formulario-tapir select,
+.formulario-tapir textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.formulario-tapir input[type="checkbox"],
+.formulario-tapir input[type="radio"] {
+  margin-right: 8px;
+}
+
+.formulario-tapir button {
+  background-color: #65a30d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formulario-tapir button:hover {
+  background-color: #4d7c0f;
+}

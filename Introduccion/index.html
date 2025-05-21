@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAPIR</title>
+  <link rel="stylesheet" href="Diseño index.css">
+  <link rel="stylesheet" href="xd.js">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div >
+    <h1 style="align-items:center;"> LOS TAPIR</h1>
+    <div class="cuestionario-wrapper">
+  <a href="cues.html" class="btn-cuestionario">Cuestionario</a>
+</div>
+
+  </div>
+  <hr>
+   <div class="container">
+   
+    <div class="left">
+      
+      <div class="thumbnail-row">
+       <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/LyFI1Sy-U4c" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+      </div>
+    </div>
+
+  
+    <div class="right">
+      
+
+      <div class="card graph-section">
+        <div class="graph-buttons">
+          
+          <canvas id="graficaTapires">
+            
+          </canvas>
+          <script src="xd.js"></script>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <nav>
+    <a href="#mapa" class="tab">Mapa</a>
+    <a href="#acerca" class="tab">Acerca</a>
+    <a href="#taxonomia" class="tab">Taxonomía</a>
+    <a href="#estatus" class="tab">Estatus</a>
+    <a href="#similares" class="tab">Especies similares</a>
+  </nav>
+
+   <section id="mapa">
+    <h2>Mapa</h2>
+    <p>Las ubicaciones de esta especie</p>
+    <img src="2.jpg" alt="">
+  </section>
+
+  <section id="acerca">
+    <h2>Acerca</h2>
+     <div class="contenedor-tapir">
+    <h2>El Tapir: Guardián Silencioso del Bosque</h2>
+
+    <p>
+      El tapir es un mamífero herbívoro de gran tamaño que habita en regiones tropicales de América Central y del Sur, así como en el Sudeste Asiático. Se le reconoce fácilmente por su cuerpo robusto, sus patas cortas y su distintiva trompa corta y flexible, que utiliza para alimentarse y explorar su entorno. A pesar de su apariencia similar a un cerdo o un oso hormiguero, el tapir está más emparentado con los caballos y los rinocerontes.
+    </p>
+
+    <p>
+      Existen cuatro especies de tapires en el mundo, de las cuales tres habitan en América: el tapir amazónico (<em>Tapirus terrestris</em>), el tapir centroamericano (<em>Tapirus bairdii</em>) y el tapir andino (<em>Tapirus pinchaque</em>). La cuarta especie, el tapir malayo (<em>Tapirus indicus</em>), vive en Asia. Todas ellas enfrentan algún nivel de amenaza debido a la pérdida de hábitat, la caza ilegal y la fragmentación de los ecosistemas.
+    </p>
+
+    <p>
+      Este animal desempeña un papel fundamental en la salud de los bosques. Es un excelente dispersor de semillas, ya que consume una gran variedad de frutos y plantas y, al desplazarse por amplias zonas, ayuda a regenerar la vegetación. Gracias a esto, el tapir es considerado una especie clave en la conservación de los ecosistemas donde habita.
+    </p>
+
+    <p>
+      Aunque suele ser esquivo y de hábitos nocturnos, el tapir ha capturado la atención de conservacionistas por su importancia ecológica y su vulnerabilidad. En muchas culturas indígenas se le considera un ser sabio y protector del bosque. Proteger al tapir no solo es salvar una especie, sino también conservar los bosques que son su hogar y, por ende, el de miles de otras especies.
+    </p>
+  </div>
+  </section>
+
+  <section id="taxonomia">
+    <h2>Taxonomía</h2>
+    <p><img src="3.jpg" alt=""> 
+    <img src="4.jpg" alt="" style="left: 1000dvb;" ></p>
+  </section>
+
+  <section id="estatus">
+  <h2>Estatus</h2>
+  <canvas id="graficoLinea" width="1000" height="500"></canvas>
+  <script src="si.js"></script>
+</section>
+
+
+  <section id="similares">
+  <h2>Especies similares</h2>
+  <div class="galeria">
+    <img src="cap.jpg" alt="Tapir Amazónico">
+    <img src="le.jpg" alt="Tapir Andino">
+    <img src="pa.jpg" alt="Tapir Malayo">
+  </div>
+
+ 
+  <div class="modal" id="zoomModal">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <img class="imagen-ampliada" id="imagenAmpliada">
+  </div>
+</section>
+ 
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="disecues.css">
+</head>
+<body>
+    <section id="cuestionario">
+  <h2>Cuestionario sobre el Tapir</h2>
+  <form class="formulario-tapir">
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+   
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad"><br><br>
+
+    
+    <label>Género:</label><br>
+    <input type="radio" id="genero1" name="genero" value="Masculino">
+    <label for="genero1">Masculino</label><br>
+    <input type="radio" id="genero2" name="genero" value="Femenino">
+    <label for="genero2">Femenino</label><br><br>
+
+  
+    <label>¿Qué te interesa del tapir?</label><br>
+    <input type="checkbox" id="habitat" name="interes" value="hábitat">
+    <label for="habitat">Su hábitat</label><br>
+    <input type="checkbox" id="alimentacion" name="interes" value="alimentacion">
+    <label for="alimentacion">Su alimentación</label><br>
+    <input type="checkbox" id="conservacion" name="interes" value="conservacion">
+    <label for="conservacion">Conservación</label><br><br>
+
+
+    <label for="especie">¿Cuál especie de tapir conoces?</label><br>
+    <select id="especie" name="especie">
+      <option value="amazónico">Tapir Amazónico</option>
+      <option value="andino">Tapir Andino</option>
+      <option value="centroamericano">Tapir Centroamericano</option>
+      <option value="malayo">Tapir Malayo</option>
+      <option value="ninguna">Ninguna</option>
+    </select><br><br>
+
+
+    <label for="comentarios">¿Qué opinas sobre los esfuerzos de conservación del tapir?</label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+   
+    <button type="submit">Enviar respuestas</button>
+  </form>
+</section>
+
+</body>
+</html>
